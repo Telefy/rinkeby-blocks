@@ -1,0 +1,16 @@
+{
+  "name": "rinkeby-blocks",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ telefy/rinkeby-blocks",
+    "create-local": "graph create --node http://localhost:8020/ telefy/rinkeby-blocks",
+    "remove-local": "graph remove --node http://localhost:8020/ telefy/rinkeby-blocks",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 telefy/rinkeby-blocks"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.29.0",
+    "@graphprotocol/graph-ts": "0.26.0"
+  }
+}
